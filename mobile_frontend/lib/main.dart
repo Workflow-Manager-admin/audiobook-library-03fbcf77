@@ -17,69 +17,152 @@ class Audiobook {
 const String placeholderCover =
     'https://via.placeholder.com/150x220.png?text=Cover';
 
-// List of sample audiobooks
+/*
+ * List of sample audiobooks for the store.
+ * Added a variety of titles, authors, and unique cover images from open sources and placeholder services.
+ */
 final List<Audiobook> sampleAudiobooks = [
   Audiobook(
     title: 'The Art of War',
     author: 'Sun Tzu',
-    imageUrl: placeholderCover,
+    imageUrl: 'https://covers.openlibrary.org/b/id/8156191-L.jpg',
   ),
   Audiobook(
     title: '1984',
     author: 'George Orwell',
-    imageUrl: placeholderCover,
+    imageUrl: 'https://covers.openlibrary.org/b/id/7222246-L.jpg',
   ),
   Audiobook(
     title: 'Pride and Prejudice',
     author: 'Jane Austen',
-    imageUrl: placeholderCover,
+    imageUrl: 'https://covers.openlibrary.org/b/id/8231996-L.jpg',
   ),
   Audiobook(
     title: 'The Hobbit',
     author: 'J.R.R. Tolkien',
-    imageUrl: placeholderCover,
+    imageUrl: 'https://covers.openlibrary.org/b/id/8101346-L.jpg',
   ),
   Audiobook(
     title: 'To Kill a Mockingbird',
     author: 'Harper Lee',
-    imageUrl: placeholderCover,
+    imageUrl: 'https://covers.openlibrary.org/b/id/8228691-L.jpg',
   ),
   Audiobook(
     title: 'Frankenstein',
     author: 'Mary Shelley',
-    imageUrl: placeholderCover,
+    imageUrl: 'https://covers.openlibrary.org/b/id/9756082-L.jpg',
   ),
   Audiobook(
     title: 'Moby Dick',
     author: 'Herman Melville',
-    imageUrl: placeholderCover,
+    imageUrl: 'https://covers.openlibrary.org/b/id/7222276-L.jpg',
   ),
   Audiobook(
     title: 'The Adventures of Sherlock Holmes',
     author: 'Arthur Conan Doyle',
-    imageUrl: placeholderCover,
+    imageUrl: 'https://covers.openlibrary.org/b/id/8231428-L.jpg',
   ),
   Audiobook(
     title: 'Hamlet',
     author: 'William Shakespeare',
-    imageUrl: placeholderCover,
+    imageUrl: 'https://covers.openlibrary.org/b/id/7915041-L.jpg',
   ),
   Audiobook(
     title: 'Dracula',
     author: 'Bram Stoker',
-    imageUrl: placeholderCover,
+    imageUrl: 'https://covers.openlibrary.org/b/id/10026390-L.jpg',
   ),
   Audiobook(
     title: 'Don Quixote',
     author: 'Miguel de Cervantes',
-    imageUrl: placeholderCover,
+    imageUrl: 'https://covers.openlibrary.org/b/id/8279045-L.jpg',
   ),
   Audiobook(
     title: 'A Tale of Two Cities',
     author: 'Charles Dickens',
-    imageUrl: placeholderCover,
+    imageUrl: 'https://covers.openlibrary.org/b/id/10252731-L.jpg',
   ),
-  // Add more if desired
+  // Additional unique audiobooks below
+  Audiobook(
+    title: 'The Little Prince',
+    author: 'Antoine de Saint-Exupéry',
+    imageUrl: 'https://covers.openlibrary.org/b/id/8795831-L.jpg',
+  ),
+  Audiobook(
+    title: 'Crime and Punishment',
+    author: 'Fyodor Dostoevsky',
+    imageUrl: 'https://covers.openlibrary.org/b/id/10342641-L.jpg',
+  ),
+  Audiobook(
+    title: 'Brave New World',
+    author: 'Aldous Huxley',
+    imageUrl: 'https://covers.openlibrary.org/b/id/8772234-L.jpg',
+  ),
+  Audiobook(
+    title: 'The Catcher in the Rye',
+    author: 'J.D. Salinger',
+    imageUrl: 'https://covers.openlibrary.org/b/id/8224440-L.jpg',
+  ),
+  Audiobook(
+    title: 'Wuthering Heights',
+    author: 'Emily Brontë',
+    imageUrl: 'https://covers.openlibrary.org/b/id/8231856-L.jpg',
+  ),
+  Audiobook(
+    title: 'Great Expectations',
+    author: 'Charles Dickens',
+    imageUrl: 'https://covers.openlibrary.org/b/id/6760942-L.jpg',
+  ),
+  Audiobook(
+    title: 'Alice\'s Adventures in Wonderland',
+    author: 'Lewis Carroll',
+    imageUrl: 'https://covers.openlibrary.org/b/id/8657032-L.jpg',
+  ),
+  Audiobook(
+    title: 'Les Misérables',
+    author: 'Victor Hugo',
+    imageUrl: 'https://covers.openlibrary.org/b/id/8613361-L.jpg',
+  ),
+  Audiobook(
+    title: 'The Odyssey',
+    author: 'Homer',
+    imageUrl: 'https://covers.openlibrary.org/b/id/8219253-L.jpg',
+  ),
+  Audiobook(
+    title: 'Emma',
+    author: 'Jane Austen',
+    imageUrl: 'https://covers.openlibrary.org/b/id/8244157-L.jpg',
+  ),
+  Audiobook(
+    title: 'Jane Eyre',
+    author: 'Charlotte Brontë',
+    imageUrl: 'https://covers.openlibrary.org/b/id/8224817-L.jpg',
+  ),
+  Audiobook(
+    title: 'Fahrenheit 451',
+    author: 'Ray Bradbury',
+    imageUrl: 'https://covers.openlibrary.org/b/id/10430613-L.jpg',
+  ),
+  Audiobook(
+    title: 'Anna Karenina',
+    author: 'Leo Tolstoy',
+    imageUrl: 'https://covers.openlibrary.org/b/id/8231440-L.jpg',
+  ),
+  Audiobook(
+    title: 'The Great Gatsby',
+    author: 'F. Scott Fitzgerald',
+    imageUrl: 'https://covers.openlibrary.org/b/id/7222279-L.jpg',
+  ),
+  Audiobook(
+    title: 'The Scarlet Letter',
+    author: 'Nathaniel Hawthorne',
+    imageUrl: 'https://covers.openlibrary.org/b/id/9811165-L.jpg',
+  ),
+  Audiobook(
+    title: 'Little Women',
+    author: 'Louisa May Alcott',
+    imageUrl: 'https://covers.openlibrary.org/b/id/8322638-L.jpg',
+  ),
 ];
 
 void main() {
